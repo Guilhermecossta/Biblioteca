@@ -15,36 +15,43 @@
 
 <body class="font-inter">
     <header id="inicio">
-        <section class="flex py-3 px-40 justify-between items-center ">
+        <section class="flex py-3 px-40 justify-between items-center max-sm:px-10">
+            <!-- menu -->
+            <div id="menu" class="lg:hidden cursor-pointer"><img src="img/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
             <div class=""><img width="45px" src="img/senac-logo-2.png" alt=""></div>
             <div class="flex gap-8 text-sm max-lg:hidden">
                 <nav><a href="#inicio">Inicio</a></nav>
-                <nav><a href="#">Sobre</a></nav>
+                <nav><a href="#sobre">Sobre</a></nav>
                 <nav><a href="#">Acervo</a></nav>
                 <nav><a href="#">Acessibilidade</a></nav>
             </div>
             <div class="flex gap-4">
-                <button
+                <!-- Modo escuro -->
+                <button id="modo-escuro"
                     class="w-10 h-10 shadow-sm rounded-b-lg rounded-l-lg rounded-e-lg flex justify-center cursor-pointer max-lg:hidden"><img
-                        width="25px" src="img/dark_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
-                <button class="w-10 h-10 shadow-sm rounded-b-lg rounded-l-lg rounded-e-lg cursor-pointer"><img
+                        width="25px" src="img/dark_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </button>
+                <!-- Acessibilidade -->
+                <button id="Acessibilidade" class="w-10 h-10 shadow-sm rounded-b-lg rounded-l-lg rounded-e-lg cursor-pointer"><img
                         class="block m-auto" width="25px"
-                        src="img/accessibility_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+                        src="img/accessibility_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </button>
             </div>
         </section>
     </header>
     <main>
-        <section class="bg-gradient-to-tr from-rose-100 to-indigo-200 flex p-40 justify-between rounded-b-4xl">
-            <div class="max-w-70">
+        <section id="sobre" class="bg-gradient-to-tr from-rose-100 to-indigo-200 flex p-40 justify-between rounded-b-4xl max-sm:px-10 max-sm:block max-sm:p-20">
+            <div class="max-w-70 max-sm:m-auto max-sm:text-center max-sm:mb-15">
                 <p class="text-xs mb-3 max-lg:mb-2">Faça um tour pela biblioteca!</p>
                 <h1 class="font-bold text-3xl max-lg:text-2xl ">Conheça a nossa biblioteca!</h1>
-                <h5 class="mb-10 max-lg:text-xs max-lg:mb-8">Um ambiente acessivel para leitura,<br> estudo e conexão com o <br>conhecimento</h5>
-                <button
-                    class="w-30 h-10 bg-orange-700 text-amber-50 rounded-b-lg rounded-l-lg rounded-e-lg drop-shadow-lg text-shadow-lg flex justify-center items-center gap-2 text-xs cursor-pointer max-lg:w-25 max-lg:h-9 max-lg:p-1 max-lg:text-xs max-lg:gap-1">Sobre
+                <h5 class="mb-10 max-lg:text-xs max-lg:mb-5">Um ambiente acessivel para leitura,<br> estudo e conexão com o <br>conhecimento</h5>
+                <!-- Sobre mais -->
+                <button id="sobre-mais"
+                    class="w-30 h-10 bg-orange-700 text-amber-50 rounded-b-lg rounded-l-lg rounded-e-lg drop-shadow-lg text-shadow-lg flex justify-center items-center gap-2 text-xs cursor-pointer max-lg:w-25 max-lg:h-9 max-lg:p-1 max-lg:text-xs max-lg:gap-1 max-sm:m-auto hover:scale-y-115 hover:scale-x-115 transition-all">Sobre
                     mais<img width="20px" src="img/arrow_forward_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </button>
             </div>
-            <div class="max-lg:w-50"><img width="250px" src="img/R.png" alt=""></div>
+            <div class="max-lg:w-50 max-sm:m-auto "><img width="250px" src="img/R.png" alt=""></div>
         </section>
         <section class="mt-30 m-auto items-center text-center">
             <div class="items-center">
@@ -52,9 +59,10 @@
                 <p class="mb-15">Faça um pequeno tour virtual pela <br>biblioteca!</p>
             </div>
             <!-- Imagens vão ser modificadas -->
-            <div class="w-255 m-auto mb-8 max-lg:w-150"><img class="rounded-b-4xl rounded-l-4xl rounded-e-4xl"
+            <!-- imagens -->
+            <div id="imagens" class="w-255 m-auto mb-8 max-lg:w-150 max-sm:m-auto max-sm:w-80 max-xl:w-200"><img class="rounded-b-4xl rounded-l-4xl rounded-e-4xl max-sm:w-100 block m-auto"
                     src="img/WhatsApp Image 2025-06-03 at 19.50.36.jpeg" alt=""></div>
-            <div class="flex gap-10 m-auto w-255 max-lg:hidden">
+            <div class="flex gap-10 m-auto w-255 max-lg:hidden max-xl:hidden">
                 <div class="w-50 h-20 bg-amber-950 rounded-2xl"><img class="rounded-2xl" src="img/bibi.jpeg" alt="">
                 </div>
                 <div class="w-50 h-20 bg-amber-950 rounded-2xl"><img class="rounded-2xl" src="img/bibi.jpeg" alt="">
